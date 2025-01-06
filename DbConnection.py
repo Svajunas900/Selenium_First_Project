@@ -21,3 +21,4 @@ class PostgresDbConnection:
             cls._instance = super().__new__(cls, *args, **kwargs)
             cls._instance = psycopg2.connect(database=POSTGRES_DB, user=POSTGRES_USER, password=POSTGRES_PASSWORD, host=POSTGRES_HOST, port=POSTGRES_PORT)
         return cls._instance
+
